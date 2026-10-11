@@ -1,4 +1,4 @@
-# Increase openwrt Disk Space With USB Drive
+# Increase openwrt Disk Space With USB Drive (For 25.12 and later versions)
 
 Edited a script to support version 25.12+ and Increase Your Openwrt Router Disk Space With USB Drive
 
