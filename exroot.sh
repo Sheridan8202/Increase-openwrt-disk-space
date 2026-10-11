@@ -17,20 +17,20 @@ clear
 
 ### Update Packages ###
 
-opkg update
+apk update
 sleep 2
 ## Install Some Package for USB Driver ###
 
-opkg install kmod-usb-storage
+apk add kmod-usb-storage
 sleep 2
 
-opkg install kmod-usb-storage-uas
+apk add kmod-usb-storage-uas
 sleep 2
 
-opkg install usbutils
+apk add usbutils
 sleep 2
 
-opkg install block-mount kmod-fs-ext4 e2fsprogs parted
+apk add block-mount kmod-fs-ext4 e2fsprogs parted
 sleep 2
 
 parted -s /dev/sda -- mklabel gpt mkpart extroot 2048s -2048s
@@ -76,7 +76,7 @@ tar -C /overlay -cvf - . | tar -C /mnt -xf -
 
 echo -e "${GREEN}Done ! Your Router Will Be reboot After 5 Seconds ... ${NC}"
 
-echo "Powered By AmirHossein Choghaei"
+echo "Powered By Sheridan Athaide"
 
 sleep 5
 
